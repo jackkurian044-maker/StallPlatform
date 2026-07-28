@@ -1542,3 +1542,131 @@ TEXT SELECTION
     color:#111;
 
 }
+/* Global */
+
+/* Navbar */
+
+/* Hero */
+
+/* Search */
+
+/* Phone */
+
+/* Categories */
+
+/* Featured */
+
+/* Footer */
+
+/* Responsive */
+
+
+/* ======================================
+   PREMIUM BUSINESS CARD (NEW)
+====================================== */
+
+.business-image{
+
+position:relative;
+
+height:240px;
+
+overflow:hidden;
+
+}
+
+.business-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.business-card-large:hover img{
+
+transform:scale(1.08);
+
+}
+
+.verified{
+
+position:absolute;
+
+top:18px;
+
+left:18px;
+
+background:#ffffff;
+
+color:#111;
+
+padding:8px 16px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+.open{
+
+position:absolute;
+
+right:18px;
+
+top:18px;
+
+background:#18b95a;
+
+padding:8px 16px;
+
+border-radius:30px;
+
+font-size:13px;
+
+}
+
+.meta{
+
+margin:15px 0;
+
+color:#d4af37;
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+}
+
+.chips{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-bottom:25px;
+
+}
+
+.chips span{
+
+padding:8px 14px;
+
+background:#252525;
+
+border-radius:30px;
+
+font-size:13px;
+
+}
