@@ -337,3 +337,405 @@ max-width:620px;
 margin-bottom:45px;
 
 }
+
+/*====================================
+SEARCH BAR
+====================================*/
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:70px;
+
+    padding:10px;
+
+    margin-top:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.search-input{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 25px;
+
+}
+
+.search-input i{
+
+    color:var(--gold);
+
+    font-size:18px;
+
+    margin-right:15px;
+
+}
+
+.search-input input{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.search-input input::placeholder{
+
+    color:#8f8f8f;
+
+}
+
+.location{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#cccccc;
+
+    padding:0 25px;
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+}
+
+.location i{
+
+    color:var(--gold);
+
+}
+
+.search-box button{
+
+    padding:16px 36px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#FFD96B,#D4AF37);
+
+    color:#111;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 30px rgba(212,175,55,.45);
+
+}
+
+/*====================================
+HERO BUTTONS
+====================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.gold-btn{
+
+    background:linear-gradient(135deg,#FFD96B,#D4AF37);
+
+    color:#111;
+
+    border:none;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gold-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(212,175,55,.35);
+
+}
+
+.outline-btn{
+
+    background:none;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.outline-btn:hover{
+
+    border-color:var(--gold);
+
+    color:var(--gold);
+
+}
+
+/*====================================
+STATS
+====================================*/
+
+.stats{
+
+    display:flex;
+
+    gap:70px;
+
+    margin-top:60px;
+
+}
+
+.stats h2{
+
+    font-size:38px;
+
+    color:var(--gold);
+
+}
+
+.stats p{
+
+    color:#9d9d9d;
+
+    margin-top:8px;
+
+}
+
+/*====================================
+PHONE
+====================================*/
+
+.phone{
+
+    width:360px;
+
+    margin:auto;
+
+    padding:30px;
+
+    background:#161616;
+
+    border-radius:45px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 40px 90px rgba(0,0,0,.55),
+
+        0 0 60px rgba(212,175,55,.10);
+
+    position:relative;
+
+}
+
+.phone::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:120px;
+
+    height:8px;
+
+    border-radius:20px;
+
+    background:#2d2d2d;
+
+}
+
+.phone-top{
+
+    text-align:center;
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    margin-top:20px;
+
+    margin-bottom:25px;
+
+}
+
+.phone-search{
+
+    background:#222;
+
+    color:#888;
+
+    border-radius:40px;
+
+    padding:15px 22px;
+
+    margin-bottom:30px;
+
+}
+
+.business{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px;
+
+    background:#1d1d1d;
+
+    border-radius:22px;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.business:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(212,175,55,.45);
+
+    background:#252525;
+
+}
+
+.emoji{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    background:rgba(212,175,55,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+}
+
+.business h3{
+
+    margin-bottom:6px;
+
+}
+
+.business span{
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+}
+
+/*====================================
+SECTION TITLES
+====================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    margin:18px 0;
+
+}
+
+.section-title p{
+
+    color:#a5a5a5;
+
+}
