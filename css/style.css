@@ -1,0 +1,339 @@
+/*==========================
+    GLOBAL
+===========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#090909;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*==========================
+    GOLD VARIABLES
+===========================*/
+
+:root{
+
+--gold:#d4af37;
+
+--gold2:#f7d774;
+
+--card:#161616;
+
+--card2:#1d1d1d;
+
+--text:#d6d6d6;
+
+--border:rgba(255,255,255,.08);
+
+}
+
+/*==========================
+    NAVBAR
+===========================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+padding:22px 0;
+
+background:rgba(8,8,8,.65);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+font-size:34px;
+
+font-weight:800;
+
+letter-spacing:3px;
+
+color:var(--gold);
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:40px;
+
+}
+
+nav a{
+
+font-size:15px;
+
+font-weight:500;
+
+transition:.35s;
+
+}
+
+nav a:hover{
+
+color:var(--gold);
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.login{
+
+padding:12px 28px;
+
+border-radius:50px;
+
+background:none;
+
+border:1px solid var(--gold);
+
+color:var(--gold);
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.login:hover{
+
+background:var(--gold);
+
+color:#000;
+
+}
+
+.register{
+
+padding:12px 30px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#d4af37,#f8dc82);
+
+color:#000;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 15px 35px rgba(212,175,55,.35);
+
+}
+
+.register:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 20px 45px rgba(212,175,55,.55);
+
+}
+
+/*==========================
+HERO
+===========================*/
+
+.hero{
+
+padding-top:170px;
+
+padding-bottom:120px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Gold Glow */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+background:radial-gradient(circle,
+rgba(212,175,55,.18),
+transparent 70%);
+
+top:-250px;
+
+right:-150px;
+
+filter:blur(20px);
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:600px;
+
+height:600px;
+
+background:radial-gradient(circle,
+rgba(212,175,55,.10),
+transparent 75%);
+
+left:-220px;
+
+bottom:-250px;
+
+}
+
+/* Layout */
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+align-items:center;
+
+gap:80px;
+
+}
+
+.tag{
+
+display:inline-flex;
+
+gap:10px;
+
+align-items:center;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+background:rgba(212,175,55,.08);
+
+border:1px solid rgba(212,175,55,.35);
+
+color:var(--gold);
+
+font-size:14px;
+
+margin-bottom:28px;
+
+}
+
+.hero h1{
+
+font-size:68px;
+
+line-height:1.08;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(135deg,#ffd96d,#d4af37);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:34px;
+
+color:#bfbfbf;
+
+max-width:620px;
+
+margin-bottom:45px;
+
+}
