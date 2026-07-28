@@ -6,4 +6,4 @@ npx create-next-app@latest . --typescript --tailwind --eslint --app
 ✔ App Router?               Yes
 ✔ Turbopack?                Yes
 ✔ Customize import alias?   No
-  
+  npm install firebase
