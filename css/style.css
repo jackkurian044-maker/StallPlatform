@@ -16,9 +16,12 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    background:#090909;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(212,175,55,.10), transparent 25%),
+        radial-gradient(circle at 90% 10%, rgba(212,175,55,.08), transparent 30%),
+        #090909;
 
-    color:#ffffff;
+    color:#fff;
 
     overflow-x:hidden;
 
